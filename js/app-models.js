@@ -18,7 +18,6 @@ function LibraryItem(title){
 
     this.checkOut = function(){
         this.status = STATUSES.CHECKED_OUT;
-
     }
 
     this.isAvailable = function(){

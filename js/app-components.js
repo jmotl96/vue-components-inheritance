@@ -83,7 +83,7 @@ const CartItemComponent = Vue.component('cartItem', {
 
     // the view
     template: `
-            <div class="card" :class="item.isAvailable() ? 'border-success' : 'border-warning'">
+            <div class="card" :class="item() ? 'border-success' : 'border-warning'">
 <!--                <h3 class="card-title">{{item.title}}</h3>-->
 <!--                <p class="card-text" v-if="item.constructor.name == 'Book'">Pages: {{item.pages}}</p>-->
 <!--                <p class="card-text" v-if="item.runningTime">Running Time: {{item.runningTime}}</p>-->
